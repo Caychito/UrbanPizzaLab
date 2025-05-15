@@ -5,15 +5,88 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoveige"
     tools:context=".ui.view.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/titulo"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:rotation="0"
+        android:rotationX="0"
+        android:shadowColor="#55000000"
+        android:shadowDx="1"
+        android:shadowDy="13"
+        android:shadowRadius="8"
+        android:text="UrbanPizzaLab"
+        android:textColor="#FF5722"
+        android:textColorHighlight="#A84A4A"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="261dp"
+        android:layout_height="343dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@drawable/logo_gozu" />
+
+    <Button
+        android:id="@+id/boton_login3"
+        android:layout_width="311dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#18605A"
+        android:fontFamily="@font/adlam_display"
+        android:text="Registrarse"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:text="Ya llegaron las pipzzzas"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <Button
+        android:id="@+id/boton_login"
+        android:layout_width="311dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/adlam_display"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
