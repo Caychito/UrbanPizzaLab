@@ -2,6 +2,7 @@ package com.example.urbanpizzalab.data.controller;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
@@ -19,9 +20,9 @@ public class UsuarioController extends bdUrban {
     }
 
     // REGISTER
-    public void registrarUsuario(Usuario usuario) {
+    public boolean insertarUsuario(Usuario usuario) {
         SQLiteDatabase db = this.getWritableDatabase();
-        if (db != null) {
+        try {
             db.execSQL("INSERT INTO " + tUsuario + " (Nombre, Apellido, Email, Contrasenia, ID_Distrito, DNI) VALUES (" +
                     "'" + usuario.getNombre() + "', " +
                     "'" + usuario.getApellido() + "', " +
@@ -31,6 +32,10 @@ public class UsuarioController extends bdUrban {
                     usuario.getDNI() + ")"
             );
             db.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace(); // Puedes mostrar un Toast si deseas
+            return false;
         }
     }
 
