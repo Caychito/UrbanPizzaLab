@@ -47,6 +47,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/adlam_display"
                     android:text="Ordene y coma!!"
+                    android:textColor="#18605A"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@+id/textView9"
                     app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -141,8 +142,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:visibility="visible"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="-16dp">
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
                         <TextView
                             android:id="@+id/textView13"
@@ -172,6 +175,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/adlam_display"
                     android:text="Categorias"
+                    android:textColor="#18605A"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
@@ -183,6 +187,7 @@
                     android:layout_marginStart="32dp"
                     android:fontFamily="@font/adlam_display"
                     android:text="Popular"
+                    android:textColor="#18605A"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="441dp" />
@@ -289,13 +294,14 @@
 
                 <ImageButton
                     android:id="@+id/imageButton2"
-                    android:layout_width="339dp"
-                    android:layout_height="97dp"
+                    android:layout_width="372dp"
+                    android:layout_height="100dp"
                     android:background="@drawable/fondo_busqueda"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -313,8 +319,8 @@
                     android:id="@+id/button8"
                     android:layout_width="47dp"
                     android:layout_height="55dp"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="4dp"
                     android:backgroundTint="#Ececec"
                     android:drawableTint="#F2EEEE"
@@ -347,7 +353,7 @@
                     android:layout_width="42dp"
                     android:layout_height="54dp"
                     android:layout_marginStart="62dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:backgroundTint="#Ececec"
                     android:drawableTint="#F2EEEE"
                     android:foregroundTint="#FF5722"
