@@ -9,6 +9,10 @@ public class Distrito {
         this.Nombre = Nombre;
     }
 
+    public Distrito(String nombre) {
+        Nombre = nombre;
+    }
+
     public int getID_Distrito() {
         return ID_Distrito;
     }

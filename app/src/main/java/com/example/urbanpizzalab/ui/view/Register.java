@@ -1,5 +1,7 @@
 package com.example.urbanpizzalab.ui.view;
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -90,6 +92,22 @@ public class Register extends AppCompatActivity {
             if (success) {
                 Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
                 limpiarCampos();
+                // Mostrar diálogo de confirmación
+                new AlertDialog.Builder(this)
+                        .setTitle("Registro exitoso")
+                        .setMessage("¿Deseas iniciar sesión ahora?")
+                        .setPositiveButton("Sí", (dialog, which) -> {
+                            Intent intent = new Intent(Register.this, Login.class);
+                            startActivity(intent);
+                            finish(); // Cierra Register
+                        })
+                        .setNegativeButton("No", (dialog, which) -> {
+                            Intent intent = new Intent(Register.this, MainActivity.class);
+                            startActivity(intent);
+                            finish(); // Cierra Register
+                        })
+                        .setCancelable(false)
+                        .show();
             } else {
                 Toast.makeText(this, "Error al registrar", Toast.LENGTH_SHORT).show();
             }
@@ -97,9 +115,23 @@ public class Register extends AppCompatActivity {
     }
     // Cargar distritos en Spinner
     private void cargarDistritos() {
+
         listaDistritos = distritoController.listarDistritos();
         ArrayList<String> nombresDistritos = new ArrayList<>();
 
+        if (listaDistritos.isEmpty()){
+            ArrayList<Distrito> insertDist = new ArrayList<>();
+            insertDist.add(new Distrito("Chorrillos"));
+            insertDist.add(new Distrito("Villa el Salvador"));
+            insertDist.add(new Distrito("Surco"));
+            insertDist.add(new Distrito("SJM"));
+            insertDist.add(new Distrito("Barranco"));
+
+            for (Distrito x : insertDist) {
+                distritoController.insertarDistrito(x);
+            }
+            listaDistritos = distritoController.listarDistritos();
+        }
         for (Distrito d : listaDistritos) {
             nombresDistritos.add(d.getNombre());
         }

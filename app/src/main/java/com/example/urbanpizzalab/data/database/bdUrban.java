@@ -18,12 +18,12 @@ public class bdUrban  extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // Tabla Categoria
         db.execSQL("CREATE TABLE Categoria (" +
-                "ID_Categoria INTEGER PRIMARY KEY, " +
+                "ID_Categoria INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "Nombre VARCHAR(50))");
 
         // Tabla Producto
         db.execSQL("CREATE TABLE Producto (" +
-                "ID_Producto INTEGER PRIMARY KEY, " +
+                "ID_Producto INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "Nombre VARCHAR(50), " +
                 "Descripcion VARCHAR(100), " +
                 "Precio DOUBLE, " +
@@ -35,28 +35,28 @@ public class bdUrban  extends SQLiteOpenHelper {
 
         // Tabla Distrito
         db.execSQL("CREATE TABLE Distrito (" +
-                "ID_Distrito INTEGER PRIMARY KEY, " +
+                "ID_Distrito INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "Nombre VARCHAR(50))");
 
         // Tabla Usuario
         db.execSQL("CREATE TABLE Usuario (" +
-                "ID_Usuario INTEGER PRIMARY KEY, " +
+                "ID_Usuario INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "Nombre VARCHAR(50), " +
                 "Apellido VARCHAR(50), " +
                 "Email VARCHAR(50), " +
-                "Contraseña VARCHAR(50), " +
+                "Contrasenia VARCHAR(50), " +
                 "ID_Distrito INTEGER, " +
                 "DNI INTEGER, " +
                 "FOREIGN KEY(ID_Distrito) REFERENCES Distrito(ID_Distrito))");
 
         // Tabla Metodo_Pago
         db.execSQL("CREATE TABLE Metodo_Pago (" +
-                "ID_MetodoPago INTEGER PRIMARY KEY, " +
+                "ID_MetodoPago INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "Nombre VARCHAR(50))");
 
         // Tabla Pedido
         db.execSQL("CREATE TABLE Pedido (" +
-                "ID_Pedido INTEGER PRIMARY KEY, " +
+                "ID_Pedido INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "ID_Usuario INTEGER, " +
                 "Fecha DATE, " +
                 "Estado VARCHAR(100), " +
@@ -66,7 +66,7 @@ public class bdUrban  extends SQLiteOpenHelper {
 
         // Tabla Detalle_Pedido
         db.execSQL("CREATE TABLE Detalle_Pedido (" +
-                "ID_DetallePedido INTEGER PRIMARY KEY, " +
+                "ID_DetallePedido INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "ID_Pedido INTEGER, " +
                 "ID_Producto INTEGER, " +
                 "Cantidad INTEGER, " +
