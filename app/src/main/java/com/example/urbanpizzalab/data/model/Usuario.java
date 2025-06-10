@@ -1,76 +1,78 @@
 package com.example.urbanpizzalab.data.model;
 
 public class Usuario {
+    private int ID_Usuario;
+    private String Nombre;
+    private String Apellido;
+    private String Email;
+    private String Contraseña;
+    private int ID_Distrito;
+    private int DNI;
 
-    private String nombre;
-    private String apellido;
-    private int dni;
-    private String correo;
-    private String password;
-    private int id_distrito;
-
-    public Usuario(int dni, String nombre, String apellido, String correo, String password) {
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.correo = correo;
-        this.password = password;
+    public Usuario(int ID_Usuario, String Nombre, String Apellido, String Email,
+                   String Contraseña, int ID_Distrito, int DNI) {
+        this.ID_Usuario = ID_Usuario;
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Email = Email;
+        this.Contraseña = Contraseña;
+        this.ID_Distrito = ID_Distrito;
+        this.DNI = DNI;
     }
 
-
-    public int dni() {
-        return dni;
+    public int getID_Usuario() {
+        return ID_Usuario;
     }
 
-    public Usuario setDni(int dni) {
-        this.dni = dni;
-        return this;
+    public void setID_Usuario(int ID_Usuario) {
+        this.ID_Usuario = ID_Usuario;
     }
 
-    public String nombre() {
-        return nombre;
+    public String getNombre() {
+        return Nombre;
     }
 
-    public Usuario setNombre(String nombre) {
-        this.nombre = nombre;
-        return this;
+    public void setNombre(String nombre) {
+        Nombre = nombre;
     }
 
-    public String apellido() {
-        return apellido;
+    public String getApellido() {
+        return Apellido;
     }
 
-    public Usuario setApellido(String apellido) {
-        this.apellido = apellido;
-        return this;
+    public void setApellido(String apellido) {
+        Apellido = apellido;
     }
 
-    public String correo() {
-        return correo;
+    public String getEmail() {
+        return Email;
     }
 
-    public Usuario setCorreo(String correo) {
-        this.correo = correo;
-        return this;
+    public void setEmail(String email) {
+        Email = email;
     }
 
-    public String password() {
-        return password;
+    public String getContrasenia() {
+        return Contraseña;
     }
 
-    public Usuario setPassword(String password) {
-        this.password = password;
-        return this;
+    public void setContrasenia(String contraseña) {
+        Contraseña = contraseña;
     }
 
-    public int id_distrito() {
-        return id_distrito;
+    public int getID_Distrito() {
+        return ID_Distrito;
     }
 
-    public Usuario setId_distrito(int id_distrito) {
-        this.id_distrito = id_distrito;
-        return this;
+    public void setID_Distrito(int ID_Distrito) {
+        this.ID_Distrito = ID_Distrito;
     }
 
+    public int getDNI() {
+        return DNI;
+    }
 
+    public void setDNI(int DNI) {
+        this.DNI = DNI;
+    }
 }
