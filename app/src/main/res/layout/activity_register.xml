@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_negro">
@@ -11,11 +10,9 @@
         android:id="@+id/imageView3"
         android:layout_width="360dp"
         android:layout_height="787dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cuadrado_blanco" />
+        app:srcCompat="@drawable/cuadrado_blanco"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="52dp" />
 
     <ImageView
         android:id="@+id/logo2"
@@ -30,7 +27,7 @@
         app:srcCompat="@drawable/logo_gozu" />
 
     <TextView
-        android:id="@+id/DistritroR"
+        android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/adlam_display"
@@ -43,7 +40,7 @@
         app:layout_constraintVertical_bias="0.728" />
 
     <EditText
-        android:id="@+id/txt_apellidos_register"
+        android:id="@+id/txt_nombres_register"
         android:layout_width="305dp"
         android:layout_height="44dp"
         android:background="@drawable/bordes_blancos"
@@ -119,7 +116,7 @@
         app:layout_constraintVertical_bias="0.659" />
 
     <TextView
-        android:id="@+id/DniR"
+        android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/adlam_display"
@@ -160,10 +157,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contraseña_login"
         app:layout_constraintVertical_bias="0.584" />
 
     <TextView
-        android:id="@+id/CorreoR"
+        android:id="@+id/Correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/adlam_display"
@@ -217,8 +215,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.225" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="136dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        app:srcCompat="@drawable/logo" />
+
     <EditText
-        android:id="@+id/txt_dni"
+        android:id="@+id/txt_telefono"
         android:layout_width="306dp"
         android:layout_height="44dp"
         android:layout_marginTop="372dp"
