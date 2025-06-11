@@ -21,6 +21,21 @@
         app:srcCompat="@drawable/cuadrado_blanco" />
 
     <ImageView
+        android:id="@+id/btnAtras_login"
+        android:layout_width="32dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:contentDescription="Volver"
+        android:focusable="true"
+        android:src="@drawable/flecha_atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <ImageView
         android:id="@+id/logo"
         android:layout_width="162dp"
         android:layout_height="160dp"
@@ -38,8 +53,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/adlam_display"
         android:text="Email"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
 
     <EditText
         android:id="@+id/txt_email_login"
@@ -63,8 +82,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/adlam_display"
         android:text="Contraseña"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
 
     <EditText
         android:id="@+id/txt_contraseña_login"
@@ -86,12 +109,15 @@
         android:id="@+id/checkBox"
         android:layout_width="119dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="364dp"
         android:fontFamily="@font/adlam_display"
         android:text="Recuerdame"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/text_button_olvidastecontra"
-        tools:layout_editor_absoluteY="489dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_login"
@@ -134,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.574" />
 
     <TextView
         android:id="@+id/text_button_Registrate_login"
