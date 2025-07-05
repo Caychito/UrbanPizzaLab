@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintVertical_bias="0.41"
         app:srcCompat="@drawable/cuadrado_blanco" />
 
     <ImageView
@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.128" />
 
     <ImageView
         android:id="@+id/logo"
@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221"
+        app:layout_constraintVertical_bias="0.203"
         app:srcCompat="@drawable/logo_gozu" />
 
     <TextView
@@ -110,7 +110,7 @@
         android:layout_width="119dp"
         android:layout_height="38dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="364dp"
+        android:layout_marginBottom="292dp"
         android:fontFamily="@font/adlam_display"
         android:text="Recuerdame"
         android:textSize="12sp"
@@ -145,7 +145,7 @@
         app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+        app:layout_constraintVertical_bias="0.731" />
 
     <TextView
         android:id="@+id/text_button_olvidastecontra"
@@ -160,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintVertical_bias="0.578" />
 
     <TextView
         android:id="@+id/text_button_Registrate_login"
@@ -174,9 +174,9 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.726" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

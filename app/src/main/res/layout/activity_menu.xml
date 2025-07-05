@@ -100,52 +100,16 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txt_buscarproducto">
 
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="184dp"
-                        android:layout_height="108dp"
-                        android:layout_marginStart="1dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/image_banner" />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/adlam_display"
-                        android:text="Delivery gratis"
-                        android:textColor="#161515"
-                        android:textSize="20sp"
-                        app:layout_constraintStart_toEndOf="@+id/imageView4"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="@font/adlam_display"
-                        android:text="Mayo 13 - Junio 26"
-                        android:textColor="#18605A"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="@+id/textView11"
-                        app:layout_constraintHorizontal_bias="0.588"
-                        app:layout_constraintStart_toStartOf="@+id/textView11"
-                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="356dp"
+                        android:layout_height="167dp"
                         android:visibility="visible"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.555"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.47">
 
                         <TextView
                             android:id="@+id/textView13"
@@ -163,6 +127,36 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.774" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="156dp"
+                            android:layout_height="131dp"
+                            app:srcCompat="@drawable/image_banner"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="19dp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/adlam_display"
+                            android:text="Delivery gratis"
+                            android:textColor="#161515"
+                            android:textSize="20sp"
+                            tools:layout_editor_absoluteX="200dp"
+                            tools:layout_editor_absoluteY="34dp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/adlam_display"
+                            android:text="Mayo 13 - Junio 26"
+                            android:textColor="#18605A"
+                            android:textStyle="bold"
+                            tools:layout_editor_absoluteX="203dp"
+                            tools:layout_editor_absoluteY="74dp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -184,7 +178,7 @@
                     android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
+                    android:layout_marginStart="24dp"
                     android:fontFamily="@font/adlam_display"
                     android:text="Popular"
                     android:textColor="#18605A"
@@ -194,13 +188,13 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_popular"
-                    android:layout_width="414dp"
-                    android:layout_height="325dp"
+                    android:layout_width="363dp"
+                    android:layout_height="173dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView19">
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:layout_constraintVertical_bias="0.0">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
@@ -294,11 +288,12 @@
 
                 <ImageButton
                     android:id="@+id/imageButton2"
-                    android:layout_width="372dp"
-                    android:layout_height="100dp"
+                    android:layout_width="382dp"
+                    android:layout_height="88dp"
                     android:background="@drawable/fondo_busqueda"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.542"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0" />
@@ -374,8 +369,8 @@
                     android:id="@+id/button7"
                     android:layout_width="75dp"
                     android:layout_height="69dp"
-                    android:layout_marginStart="56dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="4dp"
                     android:backgroundTint="#FF5722"
                     android:drawableTint="#F2EEEE"
                     android:foregroundTint="#FF5722"
